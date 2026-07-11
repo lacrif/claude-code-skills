@@ -1,5 +1,5 @@
 ---
-name: project-init
+name: project-init-codex
 description: Initialise la configuration Claude Code d'un nouveau projet et son intégration Codex — CLAUDE.md, rules modulaires, délégation/revue Codex, skills et settings.json
 disable-model-invocation: true
 argument-hint: [contexte optionnel sur le projet]

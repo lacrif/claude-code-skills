@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "project-init",
+  "displayName": "Project Init",
+  "version": "1.0.0",
+  "description": "Initialise la configuration Claude Code d'un projet avec un workflow standard ou une intégration Codex.",
+  "author": {
+    "name": "chrlacombe",
+    "email": "christophe.lacombe@hotmail.fr"
+  }
+}
