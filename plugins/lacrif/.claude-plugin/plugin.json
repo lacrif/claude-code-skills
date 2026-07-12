@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "lacrif",
+  "displayName": "Lacrif",
+  "version": "1.0.0",
+  "description": "Initialise la configuration Claude Code d'un projet et crée des plans d'exécution.",
+  "author": {
+    "name": "Lacrif"
+  }
+}

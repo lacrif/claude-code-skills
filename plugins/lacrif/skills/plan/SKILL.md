@@ -1,5 +1,5 @@
 ---
-name: plan-workflow
+name: plan
 description: Créer un plan d'exécution fiable et actionnable pour une fonctionnalité, un bug, une migration, une refactorisation ou un projet. Utiliser quand l'utilisateur demande un plan, une feuille de route, des étapes, des phases, une stratégie d'implémentation ou souhaite enregistrer un plan dans un fichier Markdown.
 ---
 

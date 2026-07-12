@@ -1,5 +1,5 @@
 ---
-name: project-init
+name: init
 description: Initialise la configuration Claude Code complète d'un nouveau projet — CLAUDE.md, rules modulaires, sous-agents spécialisés avec mémoire, skills et settings.json
 disable-model-invocation: true
 argument-hint: [contexte optionnel sur le projet]
