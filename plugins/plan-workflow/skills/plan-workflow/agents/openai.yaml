@@ -1,4 +1,0 @@
-interface:
-  display_name: "Plan Workflow"
-  short_description: "Planifier par phases dans un fichier"
-  default_prompt: "Use $plan-workflow to create a phased implementation plan in a Markdown file."
