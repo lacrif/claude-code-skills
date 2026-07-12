@@ -23,12 +23,26 @@ claude plugin install project-init@lacrif-claude-code-skills
 
 - `/project-init:project-init [contexte]` : initialise la configuration
   Claude Code d'un projet.
-- `/project-init:project-init-codex [contexte]` : même initialisation, avec
-  installation et utilisation du plugin officiel `openai/codex-plugin-cc`.
 - `/plan-workflow:plan-workflow [objectif]` : crée un plan d'exécution par
   phases et l'enregistre dans un fichier Markdown.
-- `/plan-workflow:plan-workflow-codex [objectif]` : même workflow, avec
-  analyse ou revue optionnelle via `openai/codex-plugin-cc`.
+
+## Désinstallation
+
+Dans Claude Code, désinstalle d'abord les plugins, puis retire la marketplace :
+
+```text
+/plugin uninstall project-init@lacrif-claude-code-skills
+/plugin uninstall plan-workflow@lacrif-claude-code-skills
+/plugin marketplace remove lacrif-claude-code-skills
+```
+
+Ou, en CLI :
+
+```bash
+claude plugin uninstall project-init@lacrif-claude-code-skills
+claude plugin uninstall plan-workflow@lacrif-claude-code-skills
+claude plugin marketplace remove lacrif-claude-code-skills
+```
 
 ## Développement local
 

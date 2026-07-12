@@ -3,7 +3,7 @@
   "name": "plan-workflow",
   "displayName": "Plan Workflow",
   "version": "1.0.0",
-  "description": "Crée des plans par phases dans un fichier Markdown, avec une variante intégrée à Codex.",
+  "description": "Crée des plans d'exécution par phases dans un fichier Markdown.",
   "author": {
     "name": "Lacrif"
   }
