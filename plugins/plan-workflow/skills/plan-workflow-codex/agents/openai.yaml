@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan Workflow Codex"
+  short_description: "Planifier avec revue Codex intégrée"
+  default_prompt: "Use $plan-workflow-codex to create and challenge a phased implementation plan in a Markdown file."

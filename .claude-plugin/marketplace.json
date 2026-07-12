@@ -17,6 +17,17 @@
       },
       "category": "development",
       "tags": ["claude-code", "project-setup", "codex"]
+    },
+    {
+      "name": "plan-workflow",
+      "source": "./plugins/plan-workflow",
+      "description": "Crée des plans par phases, numérotés et enregistrés dans des fichiers Markdown, avec revue Codex optionnelle.",
+      "author": {
+        "name": "chrlacombe",
+        "email": "christophe.lacombe@hotmail.fr"
+      },
+      "category": "productivity",
+      "tags": ["planning", "workflow", "markdown", "codex"]
     }
   ]
 }

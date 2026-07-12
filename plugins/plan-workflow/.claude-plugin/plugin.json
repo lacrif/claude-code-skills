@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "plan-workflow",
+  "displayName": "Plan Workflow",
+  "version": "1.0.0",
+  "description": "Crée des plans par phases dans un fichier Markdown, avec une variante intégrée à Codex.",
+  "author": {
+    "name": "Lacrif"
+  }
+}

@@ -1,6 +1,6 @@
 # Claude Code Skills
 
-Marketplace GitHub pour Claude Code, contenant le plugin `project-init`.
+Marketplace GitHub pour Claude Code, contenant les plugins `project-init` et `plan-workflow`.
 
 ## Installation
 
@@ -25,6 +25,10 @@ claude plugin install project-init@lacrif-claude-code-skills
   Claude Code d'un projet.
 - `/project-init:project-init-codex [contexte]` : même initialisation, avec
   installation et utilisation du plugin officiel `openai/codex-plugin-cc`.
+- `/plan-workflow:plan-workflow [objectif]` : crée un plan d'exécution par
+  phases et l'enregistre dans un fichier Markdown.
+- `/plan-workflow:plan-workflow-codex [objectif]` : même workflow, avec
+  analyse ou revue optionnelle via `openai/codex-plugin-cc`.
 
 ## Développement local
 
