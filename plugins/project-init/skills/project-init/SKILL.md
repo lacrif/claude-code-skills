@@ -253,26 +253,37 @@ projet au lieu de rester figée. Trois pièces :
   (avec le texte exact de la règle). N'ajoute jamais une règle sans
   son accord.
 - Après toute décision d'architecture significative (choix de librairie,
-  changement de pattern, refonte de module), propose une entrée dans
-  docs/decisions.md.
+  changement de pattern, refonte de module), propose une ADR numérotée dans
+  `docs/decisions/NNNN-slug.md` et lie-la à l'issue ou à la PR concernée.
 - Si tu découvres qu'une règle existante est obsolète ou contredite par
   le code actuel, signale-le au lieu de l'appliquer silencieusement.
 ```
  
-### 2. Journal des décisions (docs/decisions.md)
- 
-Crée le fichier avec un en-tête et le format d'entrée (ADR allégé) :
- 
+### 2. ADR versionnées (`docs/decisions/`)
+
+Crée le dossier `docs/decisions/` et son `README.md` décrivant cette
+convention. Ne crée pas d'ADR vide : crée `0001-slug.md` seulement si une
+décision d'architecture a été validée pendant l'initialisation. Utilise ce
+format pour chaque ADR :
+
 ```markdown
-# Journal des décisions
- 
-Format : ## AAAA-MM-JJ — Titre / **Contexte** / **Décision** /
-**Conséquences**. Ajouté par Claude sur validation humaine, ou à la main.
+# ADR 0001 — Titre court
+
+Date : AAAA-MM-JJ
+Statut : Acceptée
+Liens : #123, PR #456
+
+## Contexte
+
+## Décision
+
+## Conséquences
 ```
- 
-Ce journal N'EST PAS chargé à chaque session (il grossit sans limite) :
-il est consulté à la demande. Référence son existence en une ligne dans
-la carte du projet du CLAUDE.md.
+
+Numérote les ADR de façon séquentielle et ne renomme jamais un fichier déjà
+committé. Les ADR ne sont pas chargées à chaque session : référence seulement
+`docs/decisions/` dans la carte du projet du `CLAUDE.md` et consulte l'ADR
+concernée à la demande.
  
 ### 3. Skill de rétrospective (.claude/skills/retro/SKILL.md)
  
@@ -289,7 +300,8 @@ Analyse la session en cours et rends un rapport en trois sections :
    répéter. Pour chaque cas, propose la règle exacte à ajouter
    (CLAUDE.md si transverse, .claude/rules/ avec `paths:` si thématique).
 2. **Décisions prises** : les choix d'architecture ou de convention
-   faits pendant la session. Propose les entrées pour docs/decisions.md.
+   faits pendant la session. Propose une ADR distincte par décision dans
+   `docs/decisions/NNNN-slug.md`, avec les liens vers l'issue ou la PR.
 3. **Nettoyage** : règles existantes devenues obsolètes ou contredites,
    à modifier ou supprimer.
  
@@ -342,7 +354,7 @@ dans CLAUDE.md.
    `CLAUDE.local.md`, `.claude/agent-memory-local/`
 6. Propose un commit incluant : `CLAUDE.md`, `.claude/rules/`,
    `.claude/agents/`, `.claude/skills/`, `.claude/settings.json`,
-   `docs/decisions.md`
+   `docs/decisions/`
 7. Termine par un court récapitulatif des prochaines étapes manuelles :
    - Lancer `/retro` en fin de session de travail significative pour
      faire évoluer les règles
